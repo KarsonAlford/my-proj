@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms'; 
 
 import { AppComponent }  from './app.component';
+import { CustomersComponent } from "./customers/customers.component"
 import { CustomerComponent } from "./customer/customer.component"
 
 @NgModule({
@@ -12,8 +13,10 @@ import { CustomerComponent } from "./customer/customer.component"
   ],
   declarations: [ 
     AppComponent,
+    CustomersComponent,
     CustomerComponent
   ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+}

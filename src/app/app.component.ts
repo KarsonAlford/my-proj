@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  templateUrl: 'app/app.component.html',
+  templateUrl: 'app.component.html',
 /*  template: `
     <h1>Hello {{name}}</h1>
     <div [style.color]="grassColor">
@@ -19,12 +20,6 @@ export class AppComponent  {
   name = 'Angular';
   grassColor = 'green';
   username = 'default';
-  customers = [
-    { id: 1, name: 'David' },
-    { id: 2, name: 'Dolph' },
-    { id: 3, name: 'Canning' },
-    { id: 4, name: 'Stewart' },
-  ];
 
   changeGrassColor() {
     if (this.grassColor == 'blue'){
