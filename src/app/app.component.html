@@ -8,8 +8,10 @@
 <input type="text" [(ngModel)]="name">
 <!--<input type="text" [ngModel]="name" (ngModelChange)="name = $event">-->
 
-<!--<input [(ngModel)]="username">-->
-
-<p>Hello {{username}}!</p>
-
 <button (click)="changeGrassColor()">Change Grass Color</button>
+
+<ul >
+    <li *ngFor="let c of customers">
+        <app-customer [customer]="c"></app-customer>
+    </li>
+</ul>

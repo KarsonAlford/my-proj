@@ -19,6 +19,12 @@ export class AppComponent  {
   name = 'Angular';
   grassColor = 'green';
   username = 'default';
+  customers = [
+    { id: 1, name: 'David' },
+    { id: 2, name: 'Dolph' },
+    { id: 3, name: 'Canning' },
+    { id: 4, name: 'Stewart' },
+  ];
 
   changeGrassColor() {
     if (this.grassColor == 'blue'){
