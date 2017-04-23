@@ -1,0 +1,13 @@
+<h1>Hello {{name}}</h1>
+<div [style.color]="grassColor">
+    First Div Ever
+</div>
+<!--<input type="text" [value]="name" (keyup)="name = $event.target.value">-->
+<input type="text" [value]="name" (keyup.enter)="name = $event.target.value">
+<!--<input type="text" [value]="name" (blur)="name = $event.target.value">-->
+<input type="text" [(ngModel)]="name">
+<!--<input type="text" [ngModel]="name" (ngModelChange)="name = $event">-->
+
+<button (click)="changeGrassColor()">Change Grass Color</button>
+
+<app-customers></app-customers>

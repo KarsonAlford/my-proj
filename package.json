@@ -4,7 +4,7 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "build": "tsc -p src/ && gulp",
-    "build:watch": "tsc -p src/ -w && gulp",
+    "build:watch": "tsc -p src/ -w",
     "serve": "lite-server -c=bs-config.json",
     "prestart": "npm run build",
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",

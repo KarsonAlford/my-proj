@@ -1,0 +1,10 @@
+{
+    "name": "my-proj",
+    "version": "1.0.0",
+    "_comment": "//todo why do we need to include systemjs and core-js [karson]",
+    "dependencies": {
+        "systemjs": "0.19.40",
+        "core-js": "^2.4.1",
+        "express": "4.13.4"
+    }
+}
