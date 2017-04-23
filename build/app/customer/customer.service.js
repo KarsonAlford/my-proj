@@ -17,7 +17,7 @@ var CustomerService = (function () {
     }
     // This is Ward's preference
     CustomerService.prototype.getCustomers = function () {
-        return this._http.get('\app/customer/customers.json')
+        return this._http.get('https://jsonplaceholder.typicode.com/users')
             .map(function (response) { return response.json(); })
             .toPromise()
             .catch(function (err) {
@@ -26,7 +26,7 @@ var CustomerService = (function () {
         });
     };
     CustomerService.prototype.getCustomers_RxObservable = function () {
-        return this._http.get('\app/customer/customers.json')
+        return this._http.get('https://jsonplaceholder.typicode.com/users')
             .map(function (response) { return response.json(); })
             .catch(this._handleError);
     };
