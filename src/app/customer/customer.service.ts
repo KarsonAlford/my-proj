@@ -10,7 +10,7 @@ export class CustomerService {
 
     // This is Ward's preference
     getCustomers() {
-        return this._http.get('app/customer/customers.json')
+        return this._http.get('\app/customer/customers.json')
             .map((response: Response) => response.json())
             .toPromise()
             .catch((err: any) => {
@@ -20,7 +20,7 @@ export class CustomerService {
     }
 
     getCustomers_RxObservable() {
-        return this._http.get('app/customer/customers.json')
+        return this._http.get('\app/customer/customers.json')
             .map((response: Response) => response.json())
             .catch(this._handleError);
     }
