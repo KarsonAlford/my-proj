@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CustomerService } from "../customer/customer.service"
+import { CustomerService } from '../customer/customer.service';
 
 @Component({
   moduleId: module.id,
@@ -9,7 +9,7 @@ import { CustomerService } from "../customer/customer.service"
   providers: [CustomerService]
 })
 
-export class CustomersComponent implements OnInit { 
+export class CustomersComponent implements OnInit {
     customers: any[];
 
     constructor(private _customerService: CustomerService) {}

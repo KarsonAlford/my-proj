@@ -12,17 +12,17 @@ import { Component } from '@angular/core';
     <button (click)="changeGrassColor()">Change Grass Color</button>
   `*/
 })
-export class AppComponent  { 
-  
+export class AppComponent {
+
   // [ ] means property binding - C to D
   // ( ) means event binding - D to C
-  
+
   name = 'Angular';
   grassColor = 'green';
   username = 'default';
 
   changeGrassColor() {
-    if (this.grassColor == 'blue'){
+    if (this.grassColor === 'blue') {
       this.grassColor = 'green';
       return;
     }
