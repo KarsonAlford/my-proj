@@ -10,6 +10,6 @@ You need Node, Git Bash, and Visual Studio Code.
 
 The npm commands are in the package.json.  From the folder you cloned into (in Git Bash).
 
-execute: 
+execute:
 npm build
 npm start
